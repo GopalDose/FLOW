@@ -1,0 +1,174 @@
+.main-container{
+    height: 100%;
+    width: 100%;
+}
+
+.main-container .two-div{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.two-div .left-box{
+    padding: 10px;
+    height: 100vh;
+    width: 30%;
+    min-width: 300px;
+}
+
+.two-div .left-box img{
+    height: 100%;
+    border-radius: 10px;
+}
+
+.two-div .right-div{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    min-width: 300px;
+}
+
+
+.form-container{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form-container h3{
+    color: white;
+    font-family: "Nunito", sans-serif;
+    position: absolute;
+    top: 10px;
+}
+
+.form-container>p{
+    font-size: 14px;
+    color: #7c7c7c;
+    margin-top: 10px;
+    font-family: "Nunito", sans-serif;
+    text-align: center ;
+}
+
+.form-container p a{
+    color: var(--white);
+    font-family: "Nunito", sans-serif;
+    text-decoration: none;
+}
+
+.socialLogin{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.socialLogin i{
+    margin-right: 15px;
+    padding: 5px;
+    border-radius: 50%;
+    background: var(--dark-green);
+    color: var(--light-green);
+    transition: all .3s ease;
+}
+
+.socialLogin i:hover{
+    background: var(--light-green);
+    color: var(--dark-green);
+}
+
+
+.main-container .form-container form{
+    background: linear-gradient(30deg, #7c7c7c13, #00396e48);
+    border-radius: 10px;
+    width: 380px;
+    height: fit-content;
+    padding: 30px;
+    font-family: "Nunito Sans", sans-serif;
+    box-shadow: 0px 0px 8px #38f2ff28;
+    margin-top: 30px;
+}
+
+.main-container .right-box form .heading{
+    text-align: center;
+}
+
+.heading .highlight{
+    background: var(--dark-green);
+    color: var(--light-green);
+    width: 80px;
+    padding: 10px;
+    border-radius: 25px;
+    font-size: 10px;
+    font-weight: 700;
+    margin: auto;
+    text-transform: uppercase;
+    text-align: center ;
+}
+
+.heading h2{
+    font-size: 30px;
+    margin: 10px 0px;
+    font-size: 35px;
+    text-transform: capitalize;
+    font-weight: 800;
+    background: linear-gradient(30deg, var(--white), var(--light-blue) );
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+.heading p{
+    font-size: 14px;
+    color: #7c7c7c;
+    margin-bottom: 20px;
+}
+
+form .form-control{
+    width: 100%;
+    margin-top: 10px;
+}
+
+form .form-control label{
+    color: #7c7c7c;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+form .form-control input,
+select{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background: #080f17;
+    color: white;
+}
+
+form .submit-btn{
+    background: linear-gradient(to right, #394bf0, #5366ee);   
+    padding: 10px;
+    margin-top: 20px;
+    width: 100%;
+    border: 2px solid transparent;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 8px #8190ff;
+}
+
+@media(max-width: 999px) {
+    .two-div{
+        flex-direction: column;
+    }
+
+    .two-div .left-box{
+       display: none;
+    }
+.two-div .right-div {
+        width: 100%;
+    }
+
+    .main-container .form-container form{
+        width: 330px;
+    }
+}

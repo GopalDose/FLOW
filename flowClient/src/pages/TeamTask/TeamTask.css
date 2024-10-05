@@ -1,0 +1,158 @@
+.main-conatiner{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    gap: .5rem;
+    color: white;
+    font-family: "Nunito Sans", sans-serif;
+
+}
+
+.main-conatiner .rightBody{
+    padding: 10px;
+    width: 100%;
+}
+
+.main-conatiner .pathIndicator{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: linear-gradient(30deg, #7c7c7c13, #00396e48);
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px
+    /* box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.555); */
+}
+
+.pathIndicator span{
+    margin: 0;
+    color: rgba(255, 255, 255, 0.425);
+}
+
+.main-conatiner .headper{
+    margin: 10px 0px;
+    padding: 20px;
+    height: 150px;
+    background: url(../../assets/images/green-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.head h2{
+    font-size: 30px;
+}
+
+.options{
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+.options div{
+    padding: 10px;
+    background: linear-gradient(30deg, #7c7c7c13, #00396e48);
+    border-radius: 10px;
+}
+
+.section-container{
+    display: flex;
+    gap:  2rem;
+}
+
+.section-container .section{
+    width: 300px;
+}
+
+.section-container .title{
+    display: flex;
+    justify-content: space-between;
+    background: rgba(255, 255, 255, 0.39);
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: 700;
+    align-items: center;
+}
+
+.section .title .left{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.section .card{
+    background: #00396e48;
+    padding: 20px;
+    margin: 10px 0px;
+    border-radius: 5px;
+}
+
+.section .card .tag{
+    display: flex;
+    gap: .5rem;
+    font-size: 13px;
+}
+
+.card .tag .priority{
+    background: rgba(255, 255, 138, 0.486);
+    padding: 2px 7px;
+    color: yellow;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.card .tag .priority i{
+    margin-right: 5px;
+    font-size: 10px;
+}
+
+
+.card .tag .ty{
+    background: rgba(255, 202, 255, 0.39);
+    padding: 2px 7px;
+    color: rgb(140, 0, 255);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.card .tag .ty i{
+    margin-right: 5px;
+    font-size: 10px;
+}
+
+.card .heading{
+    font-size: 23px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.card .desc{
+    color: gray;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.selec {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.selec .users .person img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    margin-left: -14px;
+    border: 2px solid white;
+}
+
+.edit{
+    display: flex;
+    gap: 1rem;
+}
